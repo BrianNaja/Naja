@@ -1,0 +1,1 @@
+Just a simple WordPress theme buils with _S
