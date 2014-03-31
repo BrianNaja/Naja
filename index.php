@@ -14,21 +14,18 @@
 get_header(); ?>
 
 	<div class="row">
-		<div class="eight columns" role="main">
+		<div class="nine columns" role="main">
 
 		<?php if ( have_posts() ) : ?>
-
-			<?php /* Start the Loop */ ?>
+			<?php $post = $posts[0]; $i=0;?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to overload this in a child theme then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
-
+			
+			<?php $i++;
+				if( $i == 1) : ?>
+					<?php get_template_part( 'loop-1', get_post_format() );?>
+				<?php else : ?>
+					<?php get_template_part( 'loop-2', get_post_format() );?>
+				<?php endif;?>
 			<?php endwhile; ?>
 
 			<?php naja_content_nav( 'nav-below' ); ?>

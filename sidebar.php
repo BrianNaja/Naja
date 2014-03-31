@@ -5,7 +5,7 @@
  * @package naja
  */
 ?>
-	<div class="sidebar four columns">
+	<div class="sidebar three columns">
 		<?php do_action( 'before_sidebar' ); ?>
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 

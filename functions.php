@@ -73,8 +73,18 @@ if (function_exists('add_theme_support'))
 */
 
 /**
+ * To change excerpt length
+ */
+ 
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 ); 
+
+/**
  * Register widgetized area and update sidebar with default widgets
  */
+ 
 function naja_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'naja' ),
