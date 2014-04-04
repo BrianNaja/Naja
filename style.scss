@@ -113,7 +113,7 @@ a:hover {
 
 h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 200;
 }
 
@@ -234,7 +234,6 @@ aside h1 {
     margin-top: 10px;
     padding-top: 10px;
     clear: both;
-    border-bottom: 4px solid $blue;
 }
 
 .back-to-top {
@@ -258,7 +257,12 @@ aside h1 {
 article {
   padding: 8px 0px 12px 0px;
   margin-bottom: 20px;
+}
+
+.entry-content {
+  background-color: lighten($charcoal, 80%);
   border-bottom: 4px solid $blue;
+  padding: 20px 10px;
 }
 
 .nav-next {
@@ -274,11 +278,6 @@ article {
 .entry-meta {
   margin-bottom: 20px;
   color: #6a6565;
-}
-
-.content {
-  padding: 12px 0px 30px 0px;
-  border-bottom: none;
 }
 
 .wp-video-shortcode {

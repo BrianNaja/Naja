@@ -531,7 +531,7 @@ a:hover {
 
 h1 {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 200; }
 
 h2 {
@@ -627,8 +627,7 @@ aside h1 {
   width: 100%;
   margin-top: 10px;
   padding-top: 10px;
-  clear: both;
-  border-bottom: 4px solid #0080ff; }
+  clear: both; }
 
 .back-to-top {
   float: right;
@@ -646,8 +645,12 @@ aside h1 {
 /*!Article*/
 article {
   padding: 8px 0px 12px 0px;
-  margin-bottom: 20px;
-  border-bottom: 4px solid #0080ff; }
+  margin-bottom: 20px; }
+
+.entry-content {
+  background-color: #f4f4f4;
+  border-bottom: 4px solid #0080ff;
+  padding: 20px 10px; }
 
 .nav-next {
   float: right;
@@ -660,10 +663,6 @@ article {
 .entry-meta {
   margin-bottom: 20px;
   color: #6a6565; }
-
-.content {
-  padding: 12px 0px 30px 0px;
-  border-bottom: none; }
 
 .wp-video-shortcode {
   max-width: 100%; }

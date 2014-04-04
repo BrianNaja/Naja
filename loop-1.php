@@ -33,7 +33,7 @@
             echo '</div>'; } 
             else { } ?>
 
-    		<?php the_content("Continue Reading &rarr;"); ?>
+    		<?php the_content(); ?>
     		<?php
     			wp_link_pages( array(
     				'before' => '<div class="page-links">' . __( 'Pages:', 'naja' ),
