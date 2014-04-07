@@ -539,12 +539,12 @@ h2 {
   font-size: 1.4em;
   font-weight: 200; }
 
-h2 a {
+h1 a {
   font-family: 'Ubuntu', sans-serif;
-  color: #ae2323; }
+  color: #292727; }
 
-h2 a:hover {
-  color: #6e1616; }
+h1 a:hover {
+  color: #ae2323; }
 
 h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
@@ -676,15 +676,14 @@ article {
 
 .format-image img {
   width: 100%;
-  height: auto;
-  background-color: #e9e9e9;
-  border: 10px solid #e9e9e9;
-  border-radius: 2px;
-  box-shadow: 0px 0px 4px #504c4c;
-  margin: 10px 10px 10px 0px; }
+  height: auto; }
 
 .tiled-gallery-item img {
   width: 100%;
+  height: auto; }
+
+.thumbnail img {
+  width: auto;
   height: auto; }
 
 .caption {
@@ -692,6 +691,17 @@ article {
   font-style: italic;
   font-size: .9em;
   text-align: center;
+  margin: 4px 0px 26px 0px;
+  color: #6a6565; }
+
+.loop-2-caption {
+  width: 50%;
+  float: right; }
+
+.loop-2-caption p {
+  text-align: left;
+  font-style: italic;
+  font-size: .9em;
   margin: 4px 0px 26px 0px;
   color: #6a6565; }
 
@@ -959,6 +969,12 @@ pre, code {
   .eight img, .ten img {
     border: 6px solid #e9e9e9;
     width: 100%; }
+
+  .loop-2-caption {
+    width: 100%;
+    float: none;
+    display: inline-block;
+    margin-top: 10px; }
 
   .not-found .search-field {
     width: 50%; }

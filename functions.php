@@ -51,7 +51,7 @@ function naja_setup() {
 	/**
 	 * Enable support for Post Formats
 	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	add_theme_support( 'post-formats', array( 'image', 'gallery', 'video', 'link', 'quote' ) );
 
 	/**
 	 * Setup the WordPress core custom background feature.
@@ -67,10 +67,11 @@ add_action( 'after_setup_theme', 'naja_setup' );
 /**
  * Register post-thumbnail/featured-image functionality
  */
-  /*
+
 if (function_exists('add_theme_support'))
-    { add_theme_support('post-thumbnails'); } 
-*/
+    { add_theme_support('post-thumbnails'); 
+	  add_image_size('loop-2', 220, 150, true); // loop-2 Thumbnail dimensions width, height, (cropped)
+    } 
 
 /**
  * To change excerpt length

@@ -24,16 +24,36 @@
     	</div><!-- .entry-summary -->
     	<?php else : ?>
     	<div class="entry-content">
-    	  
-    	  <?php
-          if(has_post_thumbnail()) { 
-            echo '<div class="featured-image">';
-            the_post_thumbnail();
-            echo '<p class="caption">' . get_post( get_post_thumbnail_id() )->post_excerpt . '</p>';
-            echo '</div>'; } 
-            else { } ?>
+    	              
+            <?php if ( has_post_format( 'image' )) {
+					
+					echo '<div class="thumbnail">';
+					the_post_thumbnail('loop-2');
+					echo ' <div class="loop-2-caption"><p>' . get_post( get_post_thumbnail_id() )->post_excerpt . '</p></div>';
+					echo '</div>';
+					
+				  } else if (has_post_format('gallery')) {
+					
+					// stuff to display the gallery format post here
+					
+				  } else if (has_post_format('video')) {
+				  
+					// stuff to display the link format post here
+					
+				  } else if (has_post_format('link')) {
+				  
+					// stuff to display the link format post here
+					
+				  } else if (has_post_format('quote')) {
+				  
+					// stuff to display the link format post here
+					
+   				  } else {
+   				  
+	   				the_excerpt();
+	   				
+	   			  } ?>
 
-    		<?php the_excerpt(); ?>
     		<?php
     			wp_link_pages( array(
     				'before' => '<div class="page-links">' . __( 'Pages:', 'naja' ),
