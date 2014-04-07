@@ -29,7 +29,9 @@
 					
 					echo '<div class="thumbnail">';
 					the_post_thumbnail('loop-2');
-					echo ' <div class="loop-2-caption"><p>' . get_post( get_post_thumbnail_id() )->post_excerpt . '</p></div>';
+					echo '<div class="loop-2-caption"><p>' . get_post( get_post_thumbnail_id() )->post_excerpt . '</p>';
+					echo '<a href="' . get_permalink() . '" rel="bookmark">Enlarge Image</a>';
+					echo '</div>';
 					echo '</div>';
 					
 				  } else if (has_post_format('gallery')) {
