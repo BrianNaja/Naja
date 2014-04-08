@@ -51,7 +51,7 @@ function naja_setup() {
 	/**
 	 * Enable support for Post Formats
 	 */
-	add_theme_support( 'post-formats', array( 'image', 'gallery', 'video', 'link', 'quote' ) );
+	add_theme_support( 'post-formats', array( 'image', 'gallery', 'video', 'quote' ) );
 
 	/**
 	 * Setup the WordPress core custom background feature.

@@ -53,13 +53,9 @@
 					echo '<a href="' . get_permalink() . '" rel="bookmark">View Video</a></div>';
 					echo '</div>';
 					
-				  } else if (has_post_format('link')) {
-				  
-					echo '<div class="link">LINK FORMAT</div>';
-					
 				  } else if (has_post_format('quote')) {
 				  
-					echo '<div class="quote">QUOTE FORMAT</div>';
+					echo '<blockquote>' . the_content() . '</blockquote>';
 					
    				  } else {
    				  
