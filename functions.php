@@ -68,17 +68,19 @@ add_action( 'after_setup_theme', 'naja_setup' );
  * Register post-thumbnail/featured-image functionality
  */
 
+/*
 if (function_exists('add_theme_support'))
     { add_theme_support('post-thumbnails'); 
 	  add_image_size('loop-2', 220, 150, true); // loop-2 Thumbnail dimensions width, height, (cropped)
     } 
+*/
 
 /**
  * To change excerpt length
  */
  
 function custom_excerpt_length( $length ) {
-	return 20;
+	return 30;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 ); 
 

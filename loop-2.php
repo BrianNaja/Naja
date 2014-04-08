@@ -28,31 +28,42 @@
             <?php if ( has_post_format( 'image' )) {
 					
 					echo '<div class="thumbnail">';
-					the_post_thumbnail('loop-2');
-					echo '<div class="loop-2-caption"><p>' . get_post( get_post_thumbnail_id() )->post_excerpt . '</p>';
+					the_post_thumbnail('thumbnail');
+					echo '<div class="image-format-excerpt">';
+					echo the_excerpt();
 					echo '<a href="' . get_permalink() . '" rel="bookmark">Enlarge Image</a>';
 					echo '</div>';
 					echo '</div>';
 					
 				  } else if (has_post_format('gallery')) {
 					
-					// stuff to display the gallery format post here
+					echo '<div class="gallery-format">';
+					echo '<img src="/briannaja.com/wp-content/themes/naja/css/images/gallery.png" alt="gallery" width="150" height="150" />';
+					echo '<div class="gallery-format-excerpt">';
+					echo the_excerpt();
+					echo '<a href="' . get_permalink() . '" rel="bookmark">View Gallery</a></div>';
+					echo '</div>';
 					
 				  } else if (has_post_format('video')) {
 				  
-					// stuff to display the link format post here
+					echo '<div class="video-format">';
+					echo '<img src="/briannaja.com/wp-content/themes/naja/css/images/television.png" alt="television" width="150" height="150" />';
+					echo '<div class="video-format-excerpt">';
+					echo the_excerpt();
+					echo '<a href="' . get_permalink() . '" rel="bookmark">View Video</a></div>';
+					echo '</div>';
 					
 				  } else if (has_post_format('link')) {
 				  
-					// stuff to display the link format post here
+					echo '<div class="link">LINK FORMAT</div>';
 					
 				  } else if (has_post_format('quote')) {
 				  
-					// stuff to display the link format post here
+					echo '<div class="quote">QUOTE FORMAT</div>';
 					
    				  } else {
    				  
-	   				the_excerpt();
+	   				/* the_excerpt(); */
 	   				
 	   			  } ?>
 

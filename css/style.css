@@ -497,7 +497,7 @@ html, body {
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 200;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #292727;
   background-image: url(images/crossword.png); }
 
@@ -551,7 +551,8 @@ h3, h4, h5, h6 {
   font-weight: 300; }
 
 p {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  line-height: 1.6em; }
 
 time {
   color: #6a6565; }
@@ -674,10 +675,6 @@ article {
   width: 60%;
   height: auto; }
 
-.format-image img {
-  width: 100%;
-  height: auto; }
-
 .tiled-gallery-item img {
   width: 100%;
   height: auto; }
@@ -691,17 +688,6 @@ article {
   font-style: italic;
   font-size: .9em;
   text-align: center;
-  margin: 4px 0px 26px 0px;
-  color: #6a6565; }
-
-.loop-2-caption {
-  width: 50%;
-  float: right; }
-
-.loop-2-caption p {
-  text-align: left;
-  font-style: italic;
-  font-size: .9em;
   margin: 4px 0px 26px 0px;
   color: #6a6565; }
 
@@ -733,6 +719,20 @@ article {
   color: #458e57; }
 
 /*Article End*/
+/* Post Formats */
+.image-format-excerpt, .gallery-format-excerpt, .video-format-excerpt {
+  width: 50%;
+  float: right;
+  text-align: left;
+  font-size: .9em;
+  margin: 4px 0px 26px 0px;
+  color: #6a6565; }
+
+.gallery-format img, .video-format-excerpt img {
+  width: 150px;
+  height: 150px; }
+
+/* Post Formats End */
 /*!Form*/
 input[type=search], input[type=text], input[type=email], input[type=submit], input[type=password] {
   -webkit-appearance: none; }
@@ -943,7 +943,7 @@ pre, code {
     max-width: 140px; } }
 @media only screen and (max-width: 767px) {
   body {
-    font-size: 1.1em; }
+    font-size: 1em; }
 
   .gallery img {
     max-width: 90px;
@@ -967,10 +967,9 @@ pre, code {
     height: 50px; }
 
   .eight img, .ten img {
-    border: 6px solid #e9e9e9;
     width: 100%; }
 
-  .loop-2-caption {
+  .image-format-excerpt, .gallery-format-excerpt, .video-format-excerpt {
     width: 100%;
     float: none;
     display: inline-block;
