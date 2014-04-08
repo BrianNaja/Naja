@@ -38,7 +38,7 @@
 				  } else if (has_post_format('gallery')) {
 					
 					echo '<div class="gallery-format">';
-					echo '<img src="/briannaja.com/wp-content/themes/naja/css/images/gallery.png" alt="gallery" width="150" height="150" />';
+					echo '<img src="http://briannaja.com//wp-content/themes/naja/css/images/gallery.png" alt="gallery" width="150" height="150" />';
 					echo '<div class="gallery-format-excerpt">';
 					echo the_excerpt();
 					echo '<a href="' . get_permalink() . '" rel="bookmark">View Gallery</a></div>';
@@ -47,7 +47,7 @@
 				  } else if (has_post_format('video')) {
 				  
 					echo '<div class="video-format">';
-					echo '<img src="/briannaja.com/wp-content/themes/naja/css/images/television.png" alt="television" width="150" height="150" />';
+					echo '<img src="http://briannaja.com//wp-content/themes/naja/css/images/television.png" alt="television" width="150" height="150" />';
 					echo '<div class="video-format-excerpt">';
 					echo the_excerpt();
 					echo '<a href="' . get_permalink() . '" rel="bookmark">View Video</a></div>';
@@ -63,7 +63,8 @@
 					
    				  } else {
    				  
-	   				/* the_excerpt(); */
+	   			    the_excerpt();
+	   				echo '<a href="' . get_permalink() . '" rel="bookmark">Read More</a>';
 	   				
 	   			  } ?>
 

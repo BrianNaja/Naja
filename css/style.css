@@ -551,7 +551,7 @@ h3, h4, h5, h6 {
   font-weight: 300; }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   line-height: 1.6em; }
 
 time {
@@ -671,10 +671,6 @@ article {
 .wp-audio-shortcode {
   max-width: 100%; }
 
-.eight img, .ten img {
-  width: 60%;
-  height: auto; }
-
 .tiled-gallery-item img {
   width: 100%;
   height: auto; }
@@ -686,9 +682,8 @@ article {
 .caption {
   /* featured image caption */
   font-style: italic;
-  font-size: .9em;
+  font-size: .8em;
   text-align: center;
-  margin: 4px 0px 26px 0px;
   color: #6a6565; }
 
 .sidebar h1 {
@@ -719,13 +714,11 @@ article {
   color: #458e57; }
 
 /*Article End*/
-/* Post Formats */
+/*!Post Formats */
 .image-format-excerpt, .gallery-format-excerpt, .video-format-excerpt {
   width: 50%;
   float: right;
   text-align: left;
-  font-size: .9em;
-  margin: 4px 0px 26px 0px;
   color: #6a6565; }
 
 .gallery-format img, .video-format-excerpt img {
