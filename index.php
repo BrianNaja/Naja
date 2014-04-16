@@ -30,13 +30,12 @@ get_header(); ?>
 			<?php endif; ?>
 			
 			<?php // the query2
-			$query2 = new WP_Query( 'offset=3&posts_per_page=7' ); ?>
+			$query2 = new WP_Query( 'offset=1&posts_per_page=7' ); ?>
 
 			<?php if ( $query2->have_posts() ) : ?>
 				<?php while ( $query2->have_posts() ) : $query2->the_post(); ?>
 					<?php get_template_part( 'content-2', get_post_format() );?>
 				<?php endwhile; ?>
-				<!-- <?php naja_content_nav( 'nav-below' ); ?> -->
 				<?php wp_reset_postdata(); ?>
 				
 				<?php else:  ?>
