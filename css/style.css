@@ -648,10 +648,11 @@ article {
   padding: 8px 0px 12px 0px;
   margin-bottom: 20px; }
 
-.entry-content {
+section {
   background-color: #f4f4f4;
   border-bottom: 4px solid #0080ff;
-  padding: 20px 10px; }
+  padding: 0px 10px;
+  margin-bottom: 20px; }
 
 .nav-next {
   float: right;
@@ -715,13 +716,13 @@ article {
 
 /*Article End*/
 /*!Post Formats */
-.image-format-excerpt, .gallery-format-excerpt, .video-format-excerpt {
-  width: 50%;
+.loop-2 header {
+  width: 70%;
   float: right;
   text-align: left;
   color: #6a6565; }
 
-.gallery-format img, .video-format-excerpt img {
+.thumbnail img {
   width: 150px;
   height: 150px; }
 
@@ -962,7 +963,7 @@ pre, code {
   .eight img, .ten img {
     width: 100%; }
 
-  .image-format-excerpt, .gallery-format-excerpt, .video-format-excerpt {
+  .excerpt {
     width: 100%;
     float: none;
     display: inline-block;

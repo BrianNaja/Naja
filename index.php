@@ -16,25 +16,32 @@ get_header(); ?>
 	<div class="row">
 		<div class="nine columns" role="main">
 
-		<?php if ( have_posts() ) : ?>
-			<?php $post = $posts[0]; $i=0;?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php // the query1
+			$query1 = new WP_Query( 'posts_per_page=1' ); ?>
+
+			<?php if ( $query1->have_posts() ) : ?>
+				<?php while ( $query1->have_posts() ) : $query1->the_post(); ?>
+					<?php get_template_part( 'content', get_post_format() );?>
+				<?php endwhile; ?>
+				<?php wp_reset_postdata(); ?>
+				
+				<?php else:  ?>
+					<p><?php _e( 'Sorry, $query1 is busted.' ); ?></p>
+			<?php endif; ?>
 			
-			<?php $i++;
-				if( $i == 1) : ?>
-					<?php get_template_part( 'loop-1', get_post_format() );?>
-				<?php else : ?>
-					<?php get_template_part( 'loop-2', get_post_format() );?>
-				<?php endif;?>
-			<?php endwhile; ?>
+			<?php // the query2
+			$query2 = new WP_Query( 'offset=3&posts_per_page=7' ); ?>
 
-			<?php naja_content_nav( 'nav-below' ); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'no-results', 'index' ); ?>
-
-		<?php endif; ?>
+			<?php if ( $query2->have_posts() ) : ?>
+				<?php while ( $query2->have_posts() ) : $query2->the_post(); ?>
+					<?php get_template_part( 'content-2', get_post_format() );?>
+				<?php endwhile; ?>
+				<!-- <?php naja_content_nav( 'nav-below' ); ?> -->
+				<?php wp_reset_postdata(); ?>
+				
+				<?php else:  ?>
+					<p><?php _e( 'Sorry, $query1 is busted.' ); ?></p>
+			<?php endif; ?>
 		
     </div><!-- #eight columns -->
     

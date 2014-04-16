@@ -47,6 +47,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/images\/compose.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26475,
+		"inputAbbreviatedPath": "\/css\/images\/compose.png",
+		"outputAbbreviatedPath": "\/css\/images\/compose.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/images\/crossword.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -69,6 +80,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/css\/images\/gallery.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22888,
+		"inputAbbreviatedPath": "\/css\/images\/gallery.png",
+		"outputAbbreviatedPath": "\/css\/images\/gallery.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/images\/photo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22392,
+		"inputAbbreviatedPath": "\/css\/images\/photo.png",
+		"outputAbbreviatedPath": "\/css\/images\/photo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/images\/quote.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34963,
+		"inputAbbreviatedPath": "\/css\/images\/quote.png",
+		"outputAbbreviatedPath": "\/css\/images\/quote.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/css\/images\/Skull-bones.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -76,6 +120,28 @@
 		"initialSize": 19945,
 		"inputAbbreviatedPath": "\/css\/images\/Skull-bones.jpg",
 		"outputAbbreviatedPath": "\/css\/images\/Skull-bones.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/images\/television.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25641,
+		"inputAbbreviatedPath": "\/css\/images\/television.png",
+		"outputAbbreviatedPath": "\/css\/images\/television.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/css\/images\/url.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26240,
+		"inputAbbreviatedPath": "\/css\/images\/url.png",
+		"outputAbbreviatedPath": "\/css\/images\/url.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
