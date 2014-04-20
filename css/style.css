@@ -957,8 +957,9 @@ pre, code {
     width: 50px;
     height: 50px; }
 
-  .eight img, .ten img {
-    width: 100%; }
+  .eight img, .ten img, .medium img {
+    width: 100%;
+    height: auto; }
 
   .excerpt {
     width: 100%;
