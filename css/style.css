@@ -680,6 +680,10 @@ section {
   width: auto;
   height: auto; }
 
+.featured-image img {
+  width: 100%;
+  height: auto; }
+
 .caption {
   /* featured image caption */
   font-style: italic;

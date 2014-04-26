@@ -296,8 +296,13 @@ section {
 }
 
 .thumbnail img {
-	width: auto;
-	height: auto;
+  width: auto;
+  height: auto;
+}
+
+.featured-image img {
+  width: 100%;
+  height: auto;
 }
 
 .caption { /* featured image caption */
