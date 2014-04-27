@@ -27,7 +27,7 @@
     	  
     	  <?php
           if(has_post_thumbnail()) { 
-            echo '<div class="featured-image">';
+            echo '<div class="large">';
             the_post_thumbnail('large');
             echo '<p class="caption">' . get_post( get_post_thumbnail_id() )->post_excerpt . '</p>';
             echo '</div>'; } 
