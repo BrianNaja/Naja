@@ -31,7 +31,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 		
-    </div><!-- #eight columns -->
+    </div><!-- #nine columns -->
     
     <?php get_sidebar(); ?>
       

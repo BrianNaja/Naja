@@ -42,7 +42,7 @@ get_header(); ?>
 					<p><?php _e( 'Sorry, $query1 is busted.' ); ?></p>
 			<?php endif; ?>
 		
-    </div><!-- #eight columns -->
+    </div><!-- #nine columns -->
     
     <?php get_sidebar(); ?>
       

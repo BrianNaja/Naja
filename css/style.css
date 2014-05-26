@@ -944,6 +944,10 @@ pre, code {
     max-width: 90px;
     margin: 0px 6px 6px 0px; }
 
+  .medium img {
+    width: 250px;
+    height: auto; }
+
   .meta li:nth-child(2) {
     display: inline-block;
     float: left;

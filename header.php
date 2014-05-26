@@ -20,7 +20,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body>
 	<?php do_action( 'before' ); ?>
 	
 	<header class="main-header">
