@@ -569,6 +569,12 @@ pre, code {
   height: auto;
 }
 
+.standard-format img, .image-format img, .gallery-format img, .video-format img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
 }
 
 @media only screen and (max-width: 767px) {

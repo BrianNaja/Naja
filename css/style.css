@@ -935,7 +935,12 @@ pre, code {
 
   .medium img {
     width: 300px;
-    height: auto; } }
+    height: auto; }
+
+  .standard-format img, .image-format img, .gallery-format img, .video-format img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; } }
 @media only screen and (max-width: 767px) {
   body {
     font-size: 1em; }
