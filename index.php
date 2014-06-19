@@ -20,7 +20,7 @@ get_header(); ?>
 			<?php $first_post = 1 ; ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			
-			<?php if ($first_post == 1): ?>
+			<?php if ($first_post == 1): ?> <!-- this if statement will display the whole post by using get_template_part( 'content' ) -->
 				<?php get_template_part( 'content', get_post_format() );?>
 			<?php endif; ?>
 			
@@ -32,7 +32,7 @@ get_header(); ?>
 		<?php naja_content_nav( 'nav-below' ); ?>
 				
 		
-		</div><!-- #nine columns -->
+		</div><!-- .nine columns -->
     
     <?php get_sidebar(); ?>
       
