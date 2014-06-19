@@ -16,33 +16,23 @@ get_header(); ?>
 	<div class="row">
 		<div class="nine columns" role="main">
 
-		<?php // the query1
-			$query1 = new WP_Query( 'posts_per_page=1' ); ?>
-
-			<?php if ( $query1->have_posts() ) : ?>
-				<?php while ( $query1->have_posts() ) : $query1->the_post(); ?>
-					<?php get_template_part( 'content', get_post_format() );?>
-				<?php endwhile; ?>
-				<?php wp_reset_postdata(); ?>
-				
-				<?php else:  ?>
-					<p><?php _e( 'Sorry, $query1 is busted.' ); ?></p>
+		<!-- Start the Loop. -->
+			<?php $first_post = 1 ; ?>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			
+			<?php if ($first_post == 1): ?>
+				<?php get_template_part( 'content', get_post_format() );?>
 			<?php endif; ?>
 			
-			<?php // the query2
-			$query2 = new WP_Query( 'offset=1&posts_per_page=7' ); ?>
-
-			<?php if ( $query2->have_posts() ) : ?>
-				<?php while ( $query2->have_posts() ) : $query2->the_post(); ?>
-					<?php get_template_part( 'content-2', get_post_format() );?>
-				<?php endwhile; ?>
-				<?php wp_reset_postdata(); ?>
+			<?php get_template_part( 'content-2', get_post_format() );?>
+			
+			<?php $first_post++; endwhile; endif; ?>	
+		<!-- End the Loop. -->		
+					
+		<?php naja_content_nav( 'nav-below' ); ?>
 				
-				<?php else:  ?>
-					<p><?php _e( 'Sorry, $query1 is busted.' ); ?></p>
-			<?php endif; ?>
 		
-    </div><!-- #nine columns -->
+		</div><!-- #nine columns -->
     
     <?php get_sidebar(); ?>
       
