@@ -10,7 +10,7 @@
     	<?php if( has_post_format('image')){ ?>
 			<header class="entry-header">
 				<div class="image-format">
-					<img src="http://briannaja.com//wp-content/themes/naja/css/images/photo.png" alt="photo" width="150" height="150" />
+					<img src="http://briannaja.com//wp-content/themes/naja/css/images/photo.jpg" alt="photo" width="150" height="150" />
 				</div>
 				
     			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
@@ -25,14 +25,15 @@
     	    
     	    <div class="entry-content">
     	    	<div class="medium">
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
-				</div>
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+              <?php the_excerpt(); ?>
+            </div>
     	    </div>
 	    
 	    <?php } else if ( has_post_format('gallery')){ ?>
 			<header class="entry-header">
 				<div class="gallery-format">
-					<img src="http://briannaja.com//wp-content/themes/naja/css/images/gallery.png" alt="gallery" width="150" height="150" />
+					<img src="http://briannaja.com//wp-content/themes/naja/css/images/gallery.jpg" alt="gallery" width="150" height="150" />
 				</div>
 				
     			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
@@ -46,13 +47,13 @@
     	    </header><!-- .entry-header -->
     	    
     	    <div class="entry-content">
-    	    	
+    	    	<?php the_excerpt(); ?>
     	    </div>
 	    
 	    <?php } else if (has_post_format('video')){ ?>
 			<header class="entry-header">
 				<div class="video-format">
-					<img src="http://briannaja.com//wp-content/themes/naja/css/images/television.png" alt="television" width="150" height="150" />
+					<img src="http://briannaja.com//wp-content/themes/naja/css/images/television.jpg" alt="television" width="150" height="150" />
 				</div>
 				
     			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
@@ -66,13 +67,13 @@
     	    </header><!-- .entry-header -->
     	    
     	    <div class="entry-content">
-    	    	
+    	    	<?php the_excerpt(); ?>
     	    </div>
     	    
 	    <?php } else { ?>
 			<header class="entry-header">
 				<div class="standard-format">
-					<img src="http://briannaja.com//wp-content/themes/naja/css/images/compose.png" alt="compose" width="150" height="150" />
+					<img src="http://briannaja.com//wp-content/themes/naja/css/images/compose.jpg" alt="compose" width="150" height="150" />
 				</div>
 				
     			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>

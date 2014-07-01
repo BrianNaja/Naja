@@ -11,7 +11,7 @@
     <footer class="main-footer">
       <div class="row">
         <div class="twelve columns">
-          <p><a class="back-to-top" href="#" title="To the top of this page" class="back-to-top">&uarr; Back To Top</a></p>
+          <p><a class="back-to-top" href="#" title="To the top of this page">&uarr; Back To Top</a></p>
       </div>
     </div>
 	</footer><!-- #colophon -->

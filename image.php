@@ -41,7 +41,7 @@ get_header();
 					</nav><!-- #image-navigation -->
 				</header><!-- .entry-header -->
 
-				<div class="entry-content">
+				<div class="entry-content clearfix">
 					<div class="entry-attachment">
 						<div class="attachment">
 							<?php naja_the_attached_image(); ?>

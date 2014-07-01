@@ -14,7 +14,7 @@
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content clearfix">
 	  
 	  <?php
         if(has_post_thumbnail()) { 

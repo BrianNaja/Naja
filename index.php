@@ -15,24 +15,34 @@ get_header(); ?>
 
 	<div class="row">
 		<div class="nine columns" role="main">
-
-		<!-- Start the Loop. -->
-			<?php $first_post = 1 ; ?>
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			
-			<?php if ($first_post == 1): ?> <!-- this if statement will display the whole post by using get_template_part( 'content' ) -->
-				<?php get_template_part( 'content', get_post_format() );?>
-			<?php endif; ?>
-			
-			<?php get_template_part( 'content-2', get_post_format() );?>
-			
-			<?php $first_post++; endwhile; endif; ?>	
-		<!-- End the Loop. -->		
-					
-		<?php naja_content_nav( 'nav-below' ); ?>
-				
 		
-		</div><!-- .nine columns -->
+		<?php
+			$query1 = new WP_Query( 'posts_per_page=1' );
+
+				while ( $query1->have_posts() ) : $query1->the_post(); 
+					get_template_part( 'content', get_post_format() );
+				endwhile;
+				
+				wp_reset_postdata();
+			
+			$args = array(
+					'showposts' => 5,
+					'paged' => $paged,
+					'offset' => 1
+			);
+			
+			$query2 = new WP_Query( $args );
+
+				while ( $query2->have_posts() ) : $query2->the_post();
+					get_template_part( 'content-2', get_post_format() );
+				endwhile;
+				
+				wp_reset_postdata();
+		?>
+			
+			
+		<p class="show-more"><a href="./index.php/archive" title="Show More">Show More</a></p>
+    </div><!-- #nine columns -->
     
     <?php get_sidebar(); ?>
       

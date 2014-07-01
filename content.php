@@ -23,7 +23,7 @@
     		<?php the_excerpt(); ?>
     	</div><!-- .entry-summary -->
     	<?php else : ?>
-    	<div class="entry-content">
+    	<div class="entry-content clearfix">
     	  
     	  <?php
           if(has_post_thumbnail()) { 

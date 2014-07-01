@@ -79,7 +79,7 @@ body {
     font-weight: 200;
     font-size: 1em;
     color: $charcoal;
-    background-image: url(images/crossword.png)
+    background-image: url(images/crossword.jpg)
 }
 
 ::-webkit-input-placeholder {
@@ -230,11 +230,11 @@ aside h1 {
 /*!Footer-Main*/
 
 .main-footer {
-    background-color: $charcoal;
-    width: 100%;
-    margin-top: 10px;
-    padding-top: 10px;
-    clear: both;
+  background-color: $charcoal;
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 10px;
+  clear: both;
 }
 
 .back-to-top {
@@ -248,7 +248,24 @@ aside h1 {
 }
 
 .back-to-top:hover {
-    color: #ffffff;
+  color: #ffffff;
+}
+
+.show-more {
+  width: 100%;
+  border: none;
+  background-color: $red;
+  outline: none;
+  border-radius: 2px;
+  padding: 6px 10px;
+  text-align: center;
+}
+
+.show-more a{
+  color: #ffffff;
+}
+.show-more:hover a{
+  color: #ffffff;
 }
 
 /*Footer End*/
@@ -265,6 +282,20 @@ section {
   border-bottom: 4px solid $blue;
   padding: 0px 10px;
   margin-bottom: 20px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
 }
 
 .nav-next {
@@ -288,6 +319,17 @@ section {
 
 .wp-audio-shortcode {
 	max-width: 100%;
+}
+
+.alignleft {
+  float: left;
+  margin: 0px 20px 20px 0px;
+  display: inline-block;
+}
+
+.alignright {
+  float: right;
+  margin-left: 20px;
 }
 
 .tiled-gallery-item img {
@@ -559,7 +601,7 @@ pre, code {
     max-width: 140px;
 }
 
-.eight img, .ten img, .large img {
+.eight img, .nine img, .ten img {
   width: 100%;
   height: auto;
 }
@@ -573,6 +615,16 @@ pre, code {
   width: 40px;
   height: 40px;
   margin-right: 10px;
+}
+
+.entry-content .alignleft {
+  width: 200px;
+  height: auto;
+}
+
+.entry-content .alignright {
+  width: 200px;
+  height: auto;
 }
 
 }
@@ -590,6 +642,16 @@ body {
 
 .medium img {
   width: 250px;
+  height: auto;
+}
+
+.entry-content .alignleft {
+  width: 150px;
+  height: auto;
+}
+
+.entry-content .alignright {
+  width: 150px;
   height: auto;
 }
 
@@ -668,7 +730,7 @@ textarea {
     border-radius: 2px;
     width: 150%;
     border: 1px solid black;
-    background-image: url(images/crossword.png)
+    background-image: url(images/crossword.jpg)
 }
 
 
