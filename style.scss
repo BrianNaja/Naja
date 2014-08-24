@@ -84,22 +84,18 @@ body {
 
 ::-webkit-input-placeholder {
    color: lighten($charcoal, 50%) !important;
-   font-family: 'Ubuntu', sans-serif;
    font-weight: 200;
    }
 :-moz-placeholder { /* Firefox 18- */
    color: lighten($charcoal, 50%);
-   font-family: 'Ubuntu', sans-serif;
    font-weight: 200;  
    }
 ::-moz-placeholder {  /* Firefox 19+ */
    color: lighten($charcoal, 50%);
-   font-family: 'Ubuntu', sans-serif;
    font-weight: 200;   
    }
 :-ms-input-placeholder {  
    color: lighten($charcoal, 50%);
-   font-family: 'Ubuntu', sans-serif;
    font-weight: 200;   
    }
 
@@ -112,19 +108,16 @@ a:hover {
 }
 
 h1 {
-    font-family: 'Ubuntu', sans-serif;
     font-size: 1.6em;
     font-weight: 200;
 }
 
 h2 {
-    font-family: 'Ubuntu', sans-serif;
     font-size: 1.4em;
     font-weight: 200;
 }
 
 h1 a {
-    font-family: 'Ubuntu', sans-serif;
     color: $charcoal;
 }
 
@@ -133,7 +126,6 @@ h1 a:hover {
 }
 
 h3, h4, h5, h6 {
-    font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
 }
 
@@ -195,7 +187,6 @@ aside h1 {
 }
 
 .main-header h1 {
-    font-family: 'Ubuntu', sans-serif;
     font-size: 44px;
     font-weight: 300;
     display: inline-block;
@@ -529,26 +520,13 @@ aside .search-field:focus {
 
 pre {
   background-color: lighten($charcoal, 75%);
-  padding: 10px;
-  border-radius: 2px;
-  color: $charcoal;
+  padding: 8px;
+  font-size: 0.9em;
 }
 
 code {
   background-color: lighten($charcoal, 75%);
-  padding: 2px 4px;
-  border-radius: 2px;
-  color: $charcoal;
-  font-weight: 400;
   font-size: 0.9em;
-}
-
-.highlight {
-  font-size: 0.9em;
-}
-
-pre, code {
-  font-family: 'Ubuntu', sans-serif !important;
 }
 
 /*Syntax Highlight End*/
