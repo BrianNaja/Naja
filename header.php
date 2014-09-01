@@ -23,15 +23,24 @@
 	<?php do_action( 'before' ); ?>
 	
 	<header class="main-header">
-		<div class="row">
-      
-      <div class="six columns">
-        <a class="skull" href="/"><img src="<?php echo get_stylesheet_directory_uri() ?>/css/images/Skull-bones.jpg"></a>
-			  <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-        <!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
-      </div>
-
-		</div><!-- #row -->
+        <div class="row">
+        
+          <div class="six columns">
+            <a class="skull" href="/"><img src="<?php echo get_stylesheet_directory_uri() ?>/css/images/Skull-bones.jpg"></a>
+            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+          <!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
+          </div>
+       
+        <a href="#" class="menu-link">&#9776;</a>
+          
+          <div class="nav">		
+            <nav id="menu" class="hide" role="navigation">
+                
+                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            </nav><!-- #site-navigation -->	
+          </div>
+        
+        </div><!-- #row -->
 	</header><!-- #masthead -->
 
 	<div class="wrapper">
